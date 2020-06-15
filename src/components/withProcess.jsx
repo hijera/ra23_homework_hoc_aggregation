@@ -71,7 +71,6 @@ const withProcess = (filterFunc=null,aggregateKey=null,sortKey=null,sortOrder=1)
 
         render() {
             const list = (this.state && this.state.list)? this.state.list : [];
-            /* { [date_param]: processFunc(new Date(item.date)) ,amount : item.amount }*/
             return <Component  {...this.props} {...this.state}  list={list} />;
         }
 };
